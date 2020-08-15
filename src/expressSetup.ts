@@ -1,8 +1,8 @@
 import express from "express";
-// import methodOverride from "method-override";
+import methodOverride from "method-override";
 import bodyParser from "body-parser";
 // import Controllers from "./controllers";
-// import container from "../inversify.config";
+ import container from "../inversify.config";
 // import IBusiness from "./business/IBusiness";
 // import { TYPES } from "./constants/types";
 
@@ -11,8 +11,23 @@ const router = express.Router();
 const expressSetup = (app: any) => {
   app.use(bodyParser.urlencoded({ extended: true }));
   app.use(bodyParser.json());
-  // app.use(methodOverride());
+  app.use(methodOverride());
   app.use("/api", router);
+
+
+  router.get(
+    "/files",
+    async (req: express.Request, res: express.Response, next: any) => {
+      try {
+        const result = {
+        };
+
+        res.json(result);
+      } catch (err) {
+        next(err);
+      }
+    }
+  )
 
 // const business = container.get<IBusiness>(TYPES.IBusiness);
 
