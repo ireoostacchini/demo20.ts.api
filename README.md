@@ -15,3 +15,5 @@ npm install -D @types/express
 
 ./node_modules/.bin/tslint --init
 
+copy files from other project
+
