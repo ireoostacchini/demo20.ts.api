@@ -1,5 +1,0 @@
-{
-  "name": "e2e",
-  "testRegex": "\\.e2e\\.ts$",
-  "testEnvironment": "node"
-}
