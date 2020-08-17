@@ -7,7 +7,7 @@
     "tsc": "tsc",
     "lint": "eslint . --ext .ts --fix",
     "prebuild": "eslint . --ext .ts --fix",
-    "build": "tsc",
+    "build": "rm -rf dist/ && tsc",
     "prestart": "npm run build",
     "start": "node .",
     "test": "jest",
