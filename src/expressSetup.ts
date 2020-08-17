@@ -1,10 +1,10 @@
 import express from "express";
 import methodOverride from "method-override";
 import bodyParser from "body-parser";
- import Controllers from "./controllers";
- import container from "../inversify.config";
- import IBusiness from "./business/IBusiness";
- import { TYPES } from "./constants/types";
+import Controllers from "./controllers";
+//import container from "../inversify.config";
+import IBusiness from "./business/IBusiness";
+import { TYPES } from "./constants/types";
 
 const router = express.Router();
 

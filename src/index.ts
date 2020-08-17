@@ -1,7 +1,7 @@
 import express from "express";
 import expressSetup from "./expressSetup";
 const app = express();
-const port = 8080; // default port to listen
+const port = 3000; // default port to listen
 
 module.exports = expressSetup(app);
 
