@@ -1,10 +1,10 @@
 import express from "express";
 import methodOverride from "method-override";
 import bodyParser from "body-parser";
-// import Controllers from "./controllers";
-// import container from "../inversify.config";
-// import IBusiness from "./business/IBusiness";
-// import { TYPES } from "./constants/types";
+ import Controllers from "./controllers";
+ import container from "../inversify.config";
+ import IBusiness from "./business/IBusiness";
+ import { TYPES } from "./constants/types";
 
 const router = express.Router();
 
@@ -16,7 +16,7 @@ const expressSetup = (app: any) => {
 
   // const business = container.get<IBusiness>(TYPES.IBusiness);
 
-//  new Controllers().registerRoutes(router, business);
+  //new Controllers().registerRoutes(router, business);
 
   return app;
 };
