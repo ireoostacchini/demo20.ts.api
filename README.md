@@ -5,15 +5,15 @@ https://www.digitalocean.com/community/tutorials/setting-up-a-node-project-with-
 create repo
 npm init
 npm install
-npm install -D typescript
-npm install -D tslint
-npm install -S express
-npm install -D @types/express
 
-# sudo apt install node-typescript (to run tsc from terminal)
-# tsc -init
+npm install body-parser convict convict-format-with-validator cross-env express inversify knex method-override pg reflect-metadata
 
-./node_modules/.bin/tslint --init
+npm install -D @types/body-parser @types/convict @types/method-override @types/pg @types/express @types/jest @types/node axios jest ts-jest typescript
+
+install eslint for typescript - https://khalilstemmler.com/blogs/typescript/eslint-for-typescript/
+
 
 copy files from other project
+
+
 
