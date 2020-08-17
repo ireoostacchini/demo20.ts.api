@@ -18,21 +18,6 @@ const expressSetup = (app: any) => {
 
 //  new Controllers().registerRoutes(router, business);
 
-
-router.get(
-    "/test",
-    async (req: express.Request, res: express.Response, next: any) => {
-      try {
-        const result = {
-        };
-
-        res.json(result);
-      } catch (err) {
-        next(err);
-      }
-    }
-);
-
   return app;
 };
 
