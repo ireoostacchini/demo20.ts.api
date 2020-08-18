@@ -1,7 +1,10 @@
 import config from "../config";
 import knex from "knex";
+import IDbConnectionManager from "./IDbConnectionManager";
+import { injectable } from "inversify";
 
-class DbConnectionManager {
+@injectable()
+class DbConnectionManager implements IDbConnectionManager {
   getKnex() {
     const knexConfig = knex({
       client: "pg",

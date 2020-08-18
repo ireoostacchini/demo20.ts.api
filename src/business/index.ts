@@ -1,5 +1,5 @@
 import { injectable, inject } from "inversify";
-import "reflect-metadata";
+import "reflect-metadata"; //use once only in the app (and once for tests)
 
 import FilesManager from "./filesManager";
 import Db from "../db";
