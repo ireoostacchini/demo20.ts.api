@@ -4,7 +4,7 @@ import bodyParser from "body-parser";
 import Controllers from "./controllers";
 import IBusiness from "./business/IBusiness";
 import { TYPES } from "./constants/types";
-import container from "./setupInversify"
+import container from "./inversifySetup"
 
 
 const router = express.Router();
